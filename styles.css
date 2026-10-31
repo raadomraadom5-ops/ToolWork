@@ -43,12 +43,35 @@ body {
   width: min(100%, 1200px);
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .brand-logo {
   display: block;
   width: min(100%, 1200px);
   height: auto;
+  max-height: 280px;
+  object-fit: contain;
+}
+
+.brand-wordmark {
+  display: none;
+  font-family: Impact, 'Arial Black', sans-serif;
+  font-size: clamp(5rem, 12vw, 18rem);
+  line-height: 0.8;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #f7f7f7;
+  -webkit-text-stroke: 0.08em #ff1d1d;
+  text-shadow: 0 0 0 #ff1d1d, 0 0 0 #ff1d1d;
+  transform: scaleY(1.05);
+  user-select: none;
+  white-space: nowrap;
+}
+
+.fallback-visible .brand-wordmark {
+  display: block;
 }
 
 .app-window {

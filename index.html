@@ -10,7 +10,13 @@
     <div class="page-shell">
       <header class="topbar">
         <div class="brand-wrap">
-          <img src="logo.svg" alt="ToolWork logo" class="brand-logo" />
+          <img
+            src="logo.png"
+            alt="ToolWork logo"
+            class="brand-logo"
+            onerror="this.style.display='none'; this.parentElement.classList.add('fallback-visible');"
+          />
+          <div class="brand-wordmark" aria-label="ToolWork">TOOLWORK</div>
         </div>
       </header>
 
