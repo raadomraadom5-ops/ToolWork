@@ -1,4 +1,4 @@
 <Settings>
   <ContentFolder>content</ContentFolder>
-  <BaseUrl>http://toolworklegacy/</BaseUrl>
+  <BaseUrl>http://localhost:8000/</BaseUrl>
 </Settings>
