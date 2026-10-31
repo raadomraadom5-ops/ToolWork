@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToolWork</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <img src="logo.svg" alt="ToolWork logo" class="brand-logo" />
+        </div>
+      </header>
+
+      <main class="app-window">
+        <section class="hero">
+          <p class="eyebrow">Legacy Roblox Asset Hub</p>
+          <h1>Upload tools, decals, sounds, and models.</h1>
+          <p class="subtitle">
+            Share and organize your old-school Roblox content in one clean toolbox.
+          </p>
+        </section>
+
+        <section class="upload-panel">
+          <div class="dropzone" id="dropzone" tabindex="0" aria-label="Upload files">
+            <input id="fileInput" type="file" multiple hidden />
+            <div class="dropzone-inner">
+              <div class="upload-icon">⬆</div>
+              <h2>Drop files here</h2>
+              <p>or click to browse</p>
+            </div>
+          </div>
+
+          <div class="toolbar">
+            <button class="primary-btn" id="browseBtn" type="button">Choose Files</button>
+            <button class="secondary-btn" id="clearBtn" type="button">Clear All</button>
+          </div>
+        </section>
+
+        <section class="library-panel">
+          <div class="library-header">
+            <h3>ToolWork Library</h3>
+            <span id="countBadge">0 files</span>
+          </div>
+
+          <div id="fileList" class="file-list" aria-live="polite">
+            <div class="empty-state">
+              <p>No uploads yet. Add your first asset.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
